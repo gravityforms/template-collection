@@ -1,0 +1,221 @@
+{
+  "0": {
+    "title": "Make a Donation",
+    "description": "Support our mission with your generous donation. Every contribution makes a difference!",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "markupVersion": 2,
+    "fields": [
+      {
+        "id": 1,
+        "type": "name",
+        "label": "Full Name",
+        "isRequired": true,
+        "nameFormat": "advanced",
+        "inputs": [
+          {
+            "id": "1.2",
+            "label": "Prefix",
+            "isHidden": true
+          },
+          {
+            "id": "1.3",
+            "label": "First"
+          },
+          {
+            "id": "1.4",
+            "label": "Middle",
+            "isHidden": true
+          },
+          {
+            "id": "1.6",
+            "label": "Last"
+          },
+          {
+            "id": "1.8",
+            "label": "Suffix",
+            "isHidden": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "section",
+        "label": "Donor Information",
+        "description": "Please provide your contact details for donation processing and receipt delivery."
+      },
+      {
+        "id": 2,
+        "type": "email",
+        "label": "Email Address",
+        "isRequired": true,
+        "placeholder": "your@email.com"
+      },
+      {
+        "id": 3,
+        "type": "phone",
+        "label": "Phone Number",
+        "phoneFormat": "standard",
+        "description": "Optional. We may contact you for donation confirmation or important updates."
+      },
+      {
+        "id": 11,
+        "type": "section",
+        "label": "Donation Details",
+        "description": "Choose your donation amount and frequency below."
+      },
+      {
+        "id": 4,
+        "type": "product",
+        "label": "Donation Amount",
+        "isRequired": true,
+        "inputType": "radio",
+        "choices": [
+          {
+            "text": "$25",
+            "value": "25",
+            "price": "$25.00"
+          },
+          {
+            "text": "$50",
+            "value": "50",
+            "price": "$50.00"
+          },
+          {
+            "text": "$100",
+            "value": "100",
+            "price": "$100.00"
+          },
+          {
+            "text": "$250",
+            "value": "250",
+            "price": "$250.00"
+          },
+          {
+            "text": "Custom Amount",
+            "value": "custom",
+            "price": "$0.00"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "product",
+        "label": "Custom Amount",
+        "inputType": "price",
+        "placeholder": "Enter amount in dollars",
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "all",
+          "rules": [
+            {
+              "fieldId": "4",
+              "operator": "is",
+              "value": "custom"
+            }
+          ]
+        },
+        "description": "Minimum donation is $1. Enter whole dollar amounts only."
+      },
+      {
+        "id": 12,
+        "type": "section",
+        "label": "Additional Information",
+        "description": "Share a message and let us know how you'd like to stay connected."
+      },
+      {
+        "id": 6,
+        "type": "select",
+        "label": "Donation Frequency",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "One-time donation",
+            "value": "once",
+            "isSelected": true
+          },
+          {
+            "text": "Monthly recurring",
+            "value": "monthly"
+          },
+          {
+            "text": "Quarterly recurring",
+            "value": "quarterly"
+          },
+          {
+            "text": "Annual recurring",
+            "value": "annual"
+          }
+        ],
+        "description": "Recurring donations can be modified or cancelled at any time through your donor account."
+      },
+      {
+        "id": 7,
+        "type": "textarea",
+        "label": "Message (Optional)",
+        "placeholder": "Share why you're supporting our cause...",
+        "maxLength": 500
+      },
+      {
+        "id": 8,
+        "type": "checkbox",
+        "label": "Communication Preferences",
+        "choices": [
+          {
+            "text": "Send me email updates about your work",
+            "value": "email_updates"
+          },
+          {
+            "text": "Add me to your newsletter",
+            "value": "newsletter"
+          },
+          {
+            "text": "I'd like information about volunteer opportunities",
+            "value": "volunteer_info"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "8.1",
+            "label": "Send me email updates about your work"
+          },
+          {
+            "id": "8.2",
+            "label": "Add me to your newsletter"
+          },
+          {
+            "id": "8.3",
+            "label": "I'd like information about volunteer opportunities"
+          }
+        ],
+        "description": "We respect your privacy and will never share your information. You can unsubscribe at any time."
+      },
+      {
+        "id": 9,
+        "type": "consent",
+        "label": "Donation Acknowledgment",
+        "checkboxLabel": "I understand that this donation is being made to a registered non-profit organization and may be tax-deductible.",
+        "isRequired": true
+      },
+      {
+        "id": 13,
+        "type": "total",
+        "label": "Total Donation Amount"
+      }
+    ],
+    "button": {
+      "type": "text",
+      "text": "Complete Donation"
+    },
+    "confirmations": {
+      "default": {
+        "id": "default",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you for your generous donation! You will receive a confirmation email shortly with your donation receipt for tax purposes."
+      }
+    }
+  },
+  "version": "2.9"
+}

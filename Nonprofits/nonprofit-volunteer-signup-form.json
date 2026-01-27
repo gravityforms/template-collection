@@ -1,0 +1,247 @@
+{
+  "0": {
+    "title": "Volunteer Signup Form",
+    "description": "Thank you for your interest in volunteering! Please fill out this form to sign up for our upcoming nonprofit event.",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "markupVersion": 2,
+    "fields": [
+      {
+        "id": 1,
+        "type": "name",
+        "label": "Full Name",
+        "isRequired": true,
+        "nameFormat": "advanced",
+        "inputs": [
+          {
+            "id": "1.2",
+            "label": "Prefix",
+            "isHidden": true
+          },
+          {
+            "id": "1.3",
+            "label": "First"
+          },
+          {
+            "id": "1.4",
+            "label": "Middle",
+            "isHidden": true
+          },
+          {
+            "id": "1.6",
+            "label": "Last"
+          },
+          {
+            "id": "1.8",
+            "label": "Suffix",
+            "isHidden": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "email",
+        "label": "Email Address",
+        "isRequired": true
+      },
+      {
+        "id": 3,
+        "type": "phone",
+        "label": "Phone Number",
+        "isRequired": true,
+        "phoneFormat": "standard"
+      },
+      {
+        "id": 4,
+        "type": "checkbox",
+        "label": "Volunteer Roles (Select all that apply)",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Event Setup",
+            "value": "setup"
+          },
+          {
+            "text": "Registration/Check-in",
+            "value": "registration"
+          },
+          {
+            "text": "Guest Services",
+            "value": "guest_services"
+          },
+          {
+            "text": "Food Service",
+            "value": "food_service"
+          },
+          {
+            "text": "Activity Coordinator",
+            "value": "activity_coordinator"
+          },
+          {
+            "text": "Cleanup",
+            "value": "cleanup"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "4.1",
+            "label": "Event Setup"
+          },
+          {
+            "id": "4.2",
+            "label": "Registration/Check-in"
+          },
+          {
+            "id": "4.3",
+            "label": "Guest Services"
+          },
+          {
+            "id": "4.4",
+            "label": "Food Service"
+          },
+          {
+            "id": "4.5",
+            "label": "Activity Coordinator"
+          },
+          {
+            "id": "4.6",
+            "label": "Cleanup"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "radio",
+        "label": "Availability",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Full Day (8 AM - 6 PM)",
+            "value": "full_day"
+          },
+          {
+            "text": "Morning Shift (8 AM - 12 PM)",
+            "value": "morning"
+          },
+          {
+            "text": "Afternoon Shift (12 PM - 6 PM)",
+            "value": "afternoon"
+          },
+          {
+            "text": "Evening Only (4 PM - 6 PM)",
+            "value": "evening"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "select",
+        "label": "T-Shirt Size",
+        "choices": [
+          {
+            "text": "Please select...",
+            "value": "",
+            "isSelected": true
+          },
+          {
+            "text": "Small",
+            "value": "S"
+          },
+          {
+            "text": "Medium",
+            "value": "M"
+          },
+          {
+            "text": "Large",
+            "value": "L"
+          },
+          {
+            "text": "X-Large",
+            "value": "XL"
+          },
+          {
+            "text": "XX-Large",
+            "value": "XXL"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "textarea",
+        "label": "Special Skills or Experience",
+        "description": "Please share any relevant skills, experience, or certifications that might be helpful for this event.",
+        "maxLength": 500
+      },
+      {
+        "id": 8,
+        "type": "radio",
+        "label": "Emergency Contact Consent",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Yes, you may contact me in case of emergency",
+            "value": "yes"
+          },
+          {
+            "text": "No, do not contact me for emergencies",
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "label": "Emergency Contact Name",
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "all",
+          "rules": [
+            {
+              "fieldId": "8",
+              "operator": "is",
+              "value": "yes"
+            }
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "type": "phone",
+        "label": "Emergency Contact Phone",
+        "phoneFormat": "standard",
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "all",
+          "rules": [
+            {
+              "fieldId": "8",
+              "operator": "is",
+              "value": "yes"
+            }
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "type": "textarea",
+        "label": "Additional Comments or Questions",
+        "description": "Is there anything else you'd like us to know?",
+        "maxLength": 300
+      }
+    ],
+    "button": {
+      "type": "text",
+      "text": "Sign Me Up!"
+    },
+    "confirmations": {
+      "default": {
+        "id": "default",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you for volunteering! We've received your signup and will contact you soon with more details about the event. Your commitment to helping our cause means the world to us!"
+      }
+    }
+  },
+  "version": "2.9"
+}

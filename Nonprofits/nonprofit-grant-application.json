@@ -1,0 +1,425 @@
+{
+  "0": {
+    "title": "Nonprofit Grant Application",
+    "description": "Please complete all sections of this grant application. All fields marked with an asterisk (*) are required.",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "markupVersion": 2,
+    "fields": [
+      {
+        "id": 1,
+        "type": "section",
+        "label": "Organization Information",
+        "description": "Please provide basic information about your organization."
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "label": "Organization Name",
+        "isRequired": true,
+        "placeholder": "Enter your organization's legal name"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "label": "EIN (Tax ID Number)",
+        "isRequired": true,
+        "placeholder": "XX-XXXXXXX"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "label": "Year Founded",
+        "isRequired": true,
+        "placeholder": "YYYY"
+      },
+      {
+        "id": 5,
+        "type": "address",
+        "label": "Organization Address",
+        "isRequired": true,
+        "addressType": "us",
+        "inputs": [
+          {
+            "id": "5.1",
+            "label": "Street Address"
+          },
+          {
+            "id": "5.2",
+            "label": "Address Line 2"
+          },
+          {
+            "id": "5.3",
+            "label": "City"
+          },
+          {
+            "id": "5.4",
+            "label": "State / Province"
+          },
+          {
+            "id": "5.5",
+            "label": "ZIP / Postal Code"
+          },
+          {
+            "id": "5.6",
+            "label": "Country"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "phone",
+        "label": "Organization Phone",
+        "isRequired": true,
+        "phoneFormat": "standard"
+      },
+      {
+        "id": 7,
+        "type": "website",
+        "label": "Organization Website",
+        "isRequired": true
+      },
+      {
+        "id": 8,
+        "type": "section",
+        "label": "Primary Contact Information",
+        "description": "Information for the main contact person for this application."
+      },
+      {
+        "id": 9,
+        "type": "name",
+        "label": "Contact Name",
+        "isRequired": true,
+        "nameFormat": "advanced",
+        "inputs": [
+          {
+            "id": "9.2",
+            "label": "Prefix",
+            "isHidden": true
+          },
+          {
+            "id": "9.3",
+            "label": "First"
+          },
+          {
+            "id": "9.4",
+            "label": "Middle",
+            "isHidden": true
+          },
+          {
+            "id": "9.6",
+            "label": "Last"
+          },
+          {
+            "id": "9.8",
+            "label": "Suffix",
+            "isHidden": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "label": "Job Title",
+        "isRequired": true,
+        "placeholder": "Executive Director, Program Manager, etc."
+      },
+      {
+        "id": 11,
+        "type": "email",
+        "label": "Contact Email",
+        "isRequired": true
+      },
+      {
+        "id": 12,
+        "type": "phone",
+        "label": "Contact Phone",
+        "isRequired": true,
+        "phoneFormat": "standard"
+      },
+      {
+        "id": 13,
+        "type": "section",
+        "label": "Organization Background",
+        "description": "Tell us about your organization's mission and work."
+      },
+      {
+        "id": 14,
+        "type": "textarea",
+        "label": "Mission Statement",
+        "isRequired": true,
+        "placeholder": "Provide your organization's mission statement",
+        "maxLength": 500
+      },
+      {
+        "id": 15,
+        "type": "checkbox",
+        "label": "Primary Focus Areas",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Education",
+            "value": "education"
+          },
+          {
+            "text": "Health & Wellness",
+            "value": "health"
+          },
+          {
+            "text": "Human Services",
+            "value": "human_services"
+          },
+          {
+            "text": "Arts & Culture",
+            "value": "arts"
+          },
+          {
+            "text": "Environment",
+            "value": "environment"
+          },
+          {
+            "text": "Community Development",
+            "value": "community"
+          },
+          {
+            "text": "Youth Development",
+            "value": "youth"
+          },
+          {
+            "text": "Senior Services",
+            "value": "seniors"
+          },
+          {
+            "text": "Animal Welfare",
+            "value": "animals"
+          },
+          {
+            "text": "Other",
+            "value": "other"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "15.1",
+            "label": "Education"
+          },
+          {
+            "id": "15.2",
+            "label": "Health & Wellness"
+          },
+          {
+            "id": "15.3",
+            "label": "Human Services"
+          },
+          {
+            "id": "15.4",
+            "label": "Arts & Culture"
+          },
+          {
+            "id": "15.5",
+            "label": "Environment"
+          },
+          {
+            "id": "15.6",
+            "label": "Community Development"
+          },
+          {
+            "id": "15.7",
+            "label": "Youth Development"
+          },
+          {
+            "id": "15.8",
+            "label": "Senior Services"
+          },
+          {
+            "id": "15.9",
+            "label": "Animal Welfare"
+          },
+          {
+            "id": "15.11",
+            "label": "Other"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "textarea",
+        "label": "Organization History & Accomplishments",
+        "isRequired": true,
+        "placeholder": "Briefly describe your organization's history, key programs, and major accomplishments",
+        "maxLength": 1000
+      },
+      {
+        "id": 17,
+        "type": "section",
+        "label": "Grant Request Information",
+        "description": "Details about your grant request."
+      },
+      {
+        "id": 18,
+        "type": "text",
+        "label": "Project Title",
+        "isRequired": true,
+        "placeholder": "Brief, descriptive title for your project"
+      },
+      {
+        "id": 19,
+        "type": "number",
+        "label": "Grant Amount Requested",
+        "isRequired": true,
+        "rangeMin": 1,
+        "rangeMax": 1000000
+      },
+      {
+        "id": 20,
+        "type": "textarea",
+        "label": "Project Description",
+        "isRequired": true,
+        "placeholder": "Provide a detailed description of the project or program for which you are seeking funding",
+        "maxLength": 2000
+      },
+      {
+        "id": 21,
+        "type": "textarea",
+        "label": "Community Need & Impact",
+        "isRequired": true,
+        "placeholder": "Describe the community need your project addresses and the expected impact",
+        "maxLength": 1500
+      },
+      {
+        "id": 22,
+        "type": "textarea",
+        "label": "Target Population",
+        "isRequired": true,
+        "placeholder": "Describe who will benefit from this project (demographics, number served, etc.)",
+        "maxLength": 1000
+      },
+      {
+        "id": 23,
+        "type": "date",
+        "label": "Project Start Date",
+        "isRequired": true,
+        "dateType": "datepicker",
+        "dateFormat": "mdy"
+      },
+      {
+        "id": 24,
+        "type": "date",
+        "label": "Project End Date",
+        "isRequired": true,
+        "dateType": "datepicker",
+        "dateFormat": "mdy"
+      },
+      {
+        "id": 25,
+        "type": "section",
+        "label": "Financial Information",
+        "description": "Please provide financial details about your organization and project."
+      },
+      {
+        "id": 26,
+        "type": "number",
+        "label": "Current Annual Operating Budget",
+        "isRequired": true,
+        "rangeMin": 0,
+        "rangeMax": 100000000
+      },
+      {
+        "id": 27,
+        "type": "number",
+        "label": "Total Project Budget",
+        "isRequired": true,
+        "rangeMin": 1,
+        "rangeMax": 10000000
+      },
+      {
+        "id": 28,
+        "type": "textarea",
+        "label": "Other Funding Sources",
+        "isRequired": true,
+        "placeholder": "List other funders, amounts secured or pending, and any matching funds",
+        "maxLength": 1000
+      },
+      {
+        "id": 29,
+        "type": "section",
+        "label": "Supporting Documents",
+        "description": "Please upload the required supporting documents."
+      },
+      {
+        "id": 30,
+        "type": "fileupload",
+        "label": "IRS Determination Letter (501c3)",
+        "isRequired": true,
+        "allowedExtensions": "pdf,doc,docx",
+        "maxFileSize": 5
+      },
+      {
+        "id": 31,
+        "type": "fileupload",
+        "label": "Current Year Budget",
+        "isRequired": true,
+        "allowedExtensions": "pdf,doc,docx,xls,xlsx",
+        "maxFileSize": 5
+      },
+      {
+        "id": 32,
+        "type": "fileupload",
+        "label": "Board of Directors List",
+        "isRequired": true,
+        "allowedExtensions": "pdf,doc,docx",
+        "maxFileSize": 3
+      },
+      {
+        "id": 33,
+        "type": "fileupload",
+        "label": "Most Recent Audit or Financial Statement",
+        "isRequired": false,
+        "allowedExtensions": "pdf,doc,docx",
+        "maxFileSize": 10
+      },
+      {
+        "id": 34,
+        "type": "section",
+        "label": "Certification",
+        "description": "Please review and certify the following information."
+      },
+      {
+        "id": 35,
+        "type": "consent",
+        "label": "Application Certification",
+        "checkboxLabel": "I certify that the information provided in this application is true and accurate to the best of my knowledge. I understand that any false statements may result in disqualification from funding consideration.",
+        "isRequired": true
+      },
+      {
+        "id": 36,
+        "type": "consent",
+        "label": "Communication Consent",
+        "checkboxLabel": "I authorize the foundation to contact the organization regarding this application and to request additional information if needed.",
+        "isRequired": true
+      },
+      {
+        "id": 37,
+        "type": "textarea",
+        "label": "Additional Comments",
+        "isRequired": false,
+        "placeholder": "Is there anything else you would like us to know about your organization or this grant request?",
+        "maxLength": 500
+      }
+    ],
+    "button": {
+      "type": "text",
+      "text": "Submit Application"
+    },
+    "confirmations": {
+      "default": {
+        "id": "default",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you for submitting your grant application! We have received your submission and will review it within 4-6 weeks. You will receive an email confirmation shortly with your application reference number."
+      }
+    }
+  },
+  "version": "2.9"
+}

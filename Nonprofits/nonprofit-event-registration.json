@@ -1,0 +1,238 @@
+{
+  "0": {
+    "title": "Event Registration",
+    "description": "Please fill out this form to register for our upcoming event.",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "markupVersion": 2,
+    "fields": [
+      {
+        "id": 1,
+        "type": "name",
+        "label": "Full Name",
+        "isRequired": true,
+        "nameFormat": "advanced",
+        "inputs": [
+          {
+            "id": "1.2",
+            "label": "Prefix",
+            "isHidden": true
+          },
+          {
+            "id": "1.3",
+            "label": "First"
+          },
+          {
+            "id": "1.4",
+            "label": "Middle",
+            "isHidden": true
+          },
+          {
+            "id": "1.6",
+            "label": "Last"
+          },
+          {
+            "id": "1.8",
+            "label": "Suffix",
+            "isHidden": true
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "section",
+        "label": "Contact Information",
+        "description": "Please provide your contact details for event communication."
+      },
+      {
+        "id": 2,
+        "type": "email",
+        "label": "Email Address",
+        "isRequired": true
+      },
+      {
+        "id": 3,
+        "type": "phone",
+        "label": "Phone Number",
+        "phoneFormat": "standard",
+        "isRequired": true,
+        "description": "Required for event updates and emergency contact during the event."
+      },
+      {
+        "id": 5,
+        "type": "radio",
+        "label": "Meal Preference",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Vegetarian",
+            "value": "vegetarian"
+          },
+          {
+            "text": "Non-Vegetarian",
+            "value": "non-vegetarian"
+          },
+          {
+            "text": "Vegan",
+            "value": "vegan"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "section",
+        "label": "Event Preferences",
+        "description": "Help us customize your event experience."
+      },
+      {
+        "id": 6,
+        "type": "checkbox",
+        "label": "How did you hear about this event?",
+        "choices": [
+          {
+            "text": "Email Newsletter",
+            "value": "newsletter"
+          },
+          {
+            "text": "Social Media",
+            "value": "social"
+          },
+          {
+            "text": "Friend/Colleague",
+            "value": "friend"
+          },
+          {
+            "text": "Website",
+            "value": "website"
+          },
+          {
+            "text": "Other",
+            "value": "other"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "6.1",
+            "label": "Email Newsletter"
+          },
+          {
+            "id": "6.2",
+            "label": "Social Media"
+          },
+          {
+            "id": "6.3",
+            "label": "Friend/Colleague"
+          },
+          {
+            "id": "6.4",
+            "label": "Website"
+          },
+          {
+            "id": "6.5",
+            "label": "Other"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "textarea",
+        "label": "Special Requirements or Comments",
+        "placeholder": "Please let us know if you have any special dietary requirements, accessibility needs, or other comments."
+      },
+      {
+        "id": 8,
+        "type": "select",
+        "label": "T-Shirt Size",
+        "choices": [
+          {
+            "text": "Small",
+            "value": "S"
+          },
+          {
+            "text": "Medium",
+            "value": "M"
+          },
+          {
+            "text": "Large",
+            "value": "L"
+          },
+          {
+            "text": "Extra Large",
+            "value": "XL"
+          },
+          {
+            "text": "XXL",
+            "value": "XXL"
+          }
+        ],
+        "description": "Select your preferred t-shirt size for the complimentary event t-shirt."
+      },
+      {
+        "id": 14,
+        "type": "section",
+        "label": "Registration & Payment",
+        "description": "Complete your registration and optional donation."
+      },
+      {
+        "id": 9,
+        "type": "product",
+        "label": "Event Registration",
+        "inputType": "singleproduct",
+        "basePrice": "$50.00",
+        "disableQuantity": true
+      },
+      {
+        "id": 10,
+        "type": "radio",
+        "label": "Donation",
+        "choices": [
+          {
+            "text": "$0",
+            "value": "0",
+            "price": "$0.00"
+          },
+          {
+            "text": "$25",
+            "value": "25",
+            "price": "$25.00"
+          },
+          {
+            "text": "$50",
+            "value": "50",
+            "price": "$50.00"
+          },
+          {
+            "text": "$100",
+            "value": "100",
+            "price": "$100.00"
+          },
+          {
+            "text": "$250",
+            "value": "250",
+            "price": "$250.00"
+          }
+        ],
+        "description": "Optional donation to support our organization's programs and future events."
+      },
+      {
+        "id": 11,
+        "type": "total",
+        "label": "Total Amount"
+      }
+    ],
+    "button": {
+      "type": "text",
+      "text": "Register Now"
+    },
+    "confirmations": {
+      "default": {
+        "id": "default",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you for registering! We'll send you a confirmation email with event details shortly."
+      }
+    }
+  },
+  "version": "2.9"
+}

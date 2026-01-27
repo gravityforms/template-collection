@@ -1,0 +1,129 @@
+{
+  "0": {
+    "title": "Newsletter Signup",
+    "description": "Stay connected with our nonprofit! Select the types of updates you'd like to receive.",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "markupVersion": 2,
+    "fields": [
+      {
+        "id": 1,
+        "type": "name",
+        "label": "Name",
+        "isRequired": true,
+        "nameFormat": "advanced",
+        "inputs": [
+          {
+            "id": "1.2",
+            "label": "Prefix",
+            "isHidden": true
+          },
+          {
+            "id": "1.3",
+            "label": "First"
+          },
+          {
+            "id": "1.4",
+            "label": "Middle",
+            "isHidden": true
+          },
+          {
+            "id": "1.6",
+            "label": "Last"
+          },
+          {
+            "id": "1.8",
+            "label": "Suffix",
+            "isHidden": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "email",
+        "label": "Email Address",
+        "isRequired": true
+      },
+      {
+        "id": 3,
+        "type": "checkbox",
+        "label": "Newsletter Interests",
+        "description": "Select the types of updates you'd like to receive:",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Upcoming Events & Programs",
+            "value": "events"
+          },
+          {
+            "text": "Organization News & Impact Stories",
+            "value": "news"
+          },
+          {
+            "text": "Holiday Fundraisers",
+            "value": "holiday_fundraisers"
+          },
+          {
+            "text": "Volunteer Opportunities",
+            "value": "volunteer"
+          },
+          {
+            "text": "Community Spotlights",
+            "value": "community"
+          },
+          {
+            "text": "Grant & Donation Updates",
+            "value": "funding"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "3.1",
+            "label": "Upcoming Events & Programs"
+          },
+          {
+            "id": "3.2",
+            "label": "Organization News & Impact Stories"
+          },
+          {
+            "id": "3.3",
+            "label": "Holiday Fundraisers"
+          },
+          {
+            "id": "3.4",
+            "label": "Volunteer Opportunities"
+          },
+          {
+            "id": "3.5",
+            "label": "Community Spotlights"
+          },
+          {
+            "id": "3.6",
+            "label": "Grant & Donation Updates"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "consent",
+        "label": "Newsletter Consent",
+        "checkboxLabel": "I agree to receive newsletters and updates from this organization. I understand I can unsubscribe at any time.",
+        "isRequired": true
+      }
+    ],
+    "button": {
+      "type": "text",
+      "text": "Subscribe to Newsletter"
+    },
+    "confirmations": {
+      "default": {
+        "id": "default",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you for subscribing to our newsletter! You'll receive updates about the topics you selected. Welcome to our community!"
+      }
+    }
+  },
+  "version": "2.9"
+}
