@@ -1,6 +1,6 @@
-# Gravity Forms Templates
+# Gravity Form Templates
 
-A collection of ready-to-use Gravity Forms templates in JSON format. Browse by category, download the templates you need, and import them directly into your WordPress site.
+A collection of ready-to-use Gravity Form templates in JSON format. Browse by category, download the templates you need, and import them directly into your WordPress site.
 
 ## How to Use
 
