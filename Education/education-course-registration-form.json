@@ -307,14 +307,40 @@
         "type": "consent",
         "label": "Registration Agreement",
         "checkboxLabel": "I certify that the information provided is accurate and complete. I understand the university's policies regarding course registration, payment, and academic requirements.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "15.1", "label": "Consent", "name": ""},
+          {"id": "15.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "15.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       },
       {
         "id": 16,
         "type": "consent",
         "label": "Privacy Consent",
         "checkboxLabel": "I consent to the university contacting me via email and phone regarding my registration and academic progress.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "16.1", "label": "Consent", "name": ""},
+          {"id": "16.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "16.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

@@ -289,7 +289,20 @@
         "type": "consent",
         "label": "Terms and Conditions",
         "checkboxLabel": "I agree to the terms and conditions and acknowledge that all information provided is accurate.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "16.1", "label": "Consent", "name": ""},
+          {"id": "16.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "16.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

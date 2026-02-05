@@ -280,7 +280,20 @@
         "type": "consent",
         "label": "Marketing Consent",
         "checkboxLabel": "I agree to receive marketing communications and understand I can unsubscribe at any time.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "12.1", "label": "Consent", "name": ""},
+          {"id": "12.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "12.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

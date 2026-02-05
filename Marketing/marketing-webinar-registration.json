@@ -167,14 +167,40 @@
         "type": "consent",
         "label": "Marketing Communications",
         "checkboxLabel": "I agree to receive marketing communications and updates about future webinars and events",
-        "isRequired": false
+        "description": "",
+        "isRequired": false,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "9.1", "label": "Consent", "name": ""},
+          {"id": "9.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "9.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       },
       {
         "id": 10,
         "type": "consent",
         "label": "Terms and Conditions",
         "checkboxLabel": "I agree to the terms and conditions for webinar attendance",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "10.1", "label": "Consent", "name": ""},
+          {"id": "10.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "10.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

@@ -108,7 +108,20 @@
         "type": "consent",
         "label": "Newsletter Consent",
         "checkboxLabel": "I agree to receive newsletters and updates from this organization. I understand I can unsubscribe at any time.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "4.1", "label": "Consent", "name": ""},
+          {"id": "4.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "4.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

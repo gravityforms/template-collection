@@ -358,7 +358,20 @@
         "type": "consent",
         "label": "Feedback Usage Consent",
         "checkboxLabel": "I consent to the school using my anonymous feedback for course improvement purposes",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "16.1", "label": "Consent", "name": ""},
+          {"id": "16.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "16.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       }
     ],
     "button": {

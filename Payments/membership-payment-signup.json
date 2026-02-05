@@ -102,7 +102,20 @@
         "type": "consent",
         "label": "Terms and Conditions",
         "checkboxLabel": "I agree to the terms and conditions and privacy policy",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "6.1", "label": "Consent", "name": ""},
+          {"id": "6.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "6.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       },
       {
         "id": 7,

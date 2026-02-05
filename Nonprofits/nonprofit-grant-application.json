@@ -389,14 +389,40 @@
         "type": "consent",
         "label": "Application Certification",
         "checkboxLabel": "I certify that the information provided in this application is true and accurate to the best of my knowledge. I understand that any false statements may result in disqualification from funding consideration.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "35.1", "label": "Consent", "name": ""},
+          {"id": "35.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "35.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       },
       {
         "id": 36,
         "type": "consent",
         "label": "Communication Consent",
         "checkboxLabel": "I authorize the foundation to contact the organization regarding this application and to request additional information if needed.",
-        "isRequired": true
+        "description": "",
+        "isRequired": true,
+        "size": "large",
+        "visibility": "visible",
+        "validateState": true,
+        "descriptionPlacement": "above",
+        "inputs": [
+          {"id": "36.1", "label": "Consent", "name": ""},
+          {"id": "36.2", "label": "Text", "name": "", "isHidden": true},
+          {"id": "36.3", "label": "Description", "name": "", "isHidden": true}
+        ],
+        "choices": [
+          {"text": "Checked", "value": "1", "isSelected": false, "price": ""}
+        ]
       },
       {
         "id": 37,
